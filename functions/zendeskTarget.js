@@ -6,6 +6,6 @@ exports.handler = async function (event, context) {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ message: event }),
+    body: JSON.stringify({ event: event, context: context }),
   }
 }
